@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css'
+import Header from './Components/Header';
+import Main from './Components/Main';
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Aca manda Gabo papa <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+const App = () => {
+  const [visible , setVisible] = useState(true)
+  const [menuNoVisible , setMenuNoVisible] = useState(false)
+
+  
+  const [noVisibleSalud , setNoVisibleSalud] = useState(false)
+  const [noVisibleCertificado , setNoVisibleCertificado] = useState(false)
+  const [noVisibleVacaciones, setNoVisibleVacaciones] = useState(false)
+
+  const InformacionSalud = () => {
+    return setNoVisibleSalud(!noVisibleSalud) , setVisible(!visible)
+  }
+
+  const InformacionCertificado = () => {
+    return setNoVisibleCertificado(!noVisibleCertificado) , setVisible(!visible)
+  }
+
+  const InformacionVacaciones = ()=>{
+    return setNoVisibleVacaciones(!noVisibleVacaciones) , setVisible(!visible)
+  }
+
+  const MostrarMenu = () => {
+    return setMenuNoVisible(!menuNoVisible)
+  }
+  
+
+  return(
+    <div className='contendor__principal'>
+      <Header
+        MostrarMenu={MostrarMenu}
+        menuNoVisible={menuNoVisible}
+
+      />
+      <Main
+        visible={visible}
+        noVisibleSalud={noVisibleSalud}
+        InformacionSalud={InformacionSalud}
+        noVisibleCertificado={noVisibleCertificado}
+        InformacionCertificado={InformacionCertificado}
+        InformacionVacaciones={InformacionVacaciones}
+        noVisibleVacaciones={noVisibleVacaciones}
+      />    
     </div>
-  );
+    
+  )
 }
 
 export default App;
