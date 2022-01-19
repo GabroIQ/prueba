@@ -10,8 +10,8 @@ const Main = ({InformacionSalud , visible , noVisibleSalud , InformacionCertific
                                 <i className='bx bx-left-arrow-alt' onClick={()=>InformacionSalud()} ></i>
                                 <div className='contenedor__main__informacion__de__salud'>
                                     <h1>i</h1>
-                                    <h2>Informacion de salud</h2>
-                                    <p>Es necesario que sigamos cuidandonos y respetando las medidas y recomendaciones sanitarias</p>
+                                    <h2>Información de salud</h2>
+                                    <p>Es necesario que sigamos cuidándonos y respetando las medidas y recomendaciones sanitarias</p>
                                 </div>  
                 
                                 <div className='contenedor__main__informacion__de__salud__datos'>
@@ -21,12 +21,12 @@ const Main = ({InformacionSalud , visible , noVisibleSalud , InformacionCertific
                             
                                 <div className='contenedor__main__informacion__de__salud__estado__vacunacion'>
                                     <h3>Vacunacion de COVID-19 Argentina</h3>
-                                    <h2>Vacunacion Completa</h2>
-                                    <p>Fecha de ultima dosis: 27/08/2021</p>
+                                    <h2>Vacunación Completa</h2>
+                                    <p>Fecha de última dosis: 27/08/2021</p>
                                 </div>
                                 
                                 <div className='contenedor__main__informacion__de__salud__diagnostico__covi'>
-                                    <h3>Diagnostico COVID-19</h3>
+                                    <h3>Diagnóstico COVID-19</h3>
                                     <h2>Sin test registrado en las ultimas 48hs</h2>
                                 </div>
                         </div> : null
@@ -41,7 +41,7 @@ const Main = ({InformacionSalud , visible , noVisibleSalud , InformacionCertific
                             <i className='bx bx-home' ></i>
                             <i className='bx bx-walk' ></i>
                         </div>
-                        <h2>Certificado de Circulacion habilitado</h2>
+                        <h2>Certificado de Circulación habilitado</h2>
                     </section>
 
                     <section className='contenedor__main__certificado__circulacion__datos'>
@@ -54,11 +54,11 @@ const Main = ({InformacionSalud , visible , noVisibleSalud , InformacionCertific
                     <section className='contenedor__main__certificado__circulacion__datos'>
                             <div className='datos__transporte'>
                                 <div>
-                                    <h3>Certificado Unico de circulacion</h3>
+                                    <h3>Certificado Unico de circulación</h3>
                                     <h2 className='datos__transporte__habilitado'>Habilitado</h2>
                                     <h2 className='datos__transporte__esencial '>ESENCIAL- Transporte</h2>
                                     <h2 className='datos__transporte__esencial '>publico: SI</h2>
-                                    <p className='datos__transporte__esencial '>MAS INFORMACION</p>
+                                    <p className='datos__transporte__esencial '>MAS INFORMACIÓN</p>
                                 </div>
                                 <img src='./img/qr.png'/>
                             </div>
