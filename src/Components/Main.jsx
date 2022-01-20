@@ -58,7 +58,7 @@ const Main = ({InformacionSalud , visible , noVisibleSalud , InformacionCertific
                                     <h2 className='datos__transporte__habilitado'>Habilitado</h2>
                                     <h2 className='datos__transporte__esencial '>ESENCIAL- Transporte</h2>
                                     <h2 className='datos__transporte__esencial '>publico: SI</h2>
-                                    <p className='datos__transporte__esencial '>MAS INFORMACIÓN</p>
+                                    <p className='datos__transporte__esencial '>MAS INFORMACION</p>
                                 </div>
                                 <img src='./img/qr.png'/>
                             </div>

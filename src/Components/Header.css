@@ -51,6 +51,10 @@
     line-height: 20px;
 }
 
+.header__menu__datos h2 span{
+    text-transform: uppercase;
+}
+
 .header__menu__datos h3 span{
     font-weight: 400;
 }
